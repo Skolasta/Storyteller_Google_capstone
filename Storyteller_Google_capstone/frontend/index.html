@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Story<span>Agent</span></h1>
+            </div>
+
+            <div class="settings-panel">
+                <h2>Adventure Settings</h2>
+
+                <div class="form-group">
+                    <label for="target-lang">Target Language</label>
+                    <select id="target-lang">
+                        <option value="Korean">Korean</option>
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Turkish">Turkish</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="level">Proficiency Level</label>
+                    <select id="level">
+                        <option value="A1">A1 - Beginner</option>
+                        <option value="A2">A2 - Elementary</option>
+                        <option value="B1">B1 - Intermediate</option>
+                        <option value="B2">B2 - Upper Intermediate</option>
+                        <option value="C1">C1 - Advanced</option>
+                        <option value="C2">C2 - Expert</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="native-lang">Native Language</label>
+                    <select id="native-lang">
+                        <option value="English">English</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="Spanish">Spanish</option>
+                    </select>
+                </div>
+
+                <button id="start-btn" class="primary-btn">Start Adventure</button>
+            </div>
+        </aside>
+
+        <main class="chat-area">
+            <div class="chat-header">
+                <h2 id="chat-title">Welcome to your adventure!</h2>
+                <span class="status-indicator"></span>
+            </div>
+
+            <div id="messages" class="messages-container">
+                <div class="message system">
+                    <p>Configure your settings on the left and click "Start Adventure" to begin your journey!</p>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Type your response here..." disabled>
+                <button id="send-btn" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

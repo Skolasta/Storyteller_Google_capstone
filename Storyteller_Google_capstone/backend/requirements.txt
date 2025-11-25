@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+google-genai
+python-dotenv
+# google-adk is assumed to be installed or part of the local environment
