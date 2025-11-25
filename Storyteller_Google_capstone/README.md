@@ -66,11 +66,11 @@ The project is built using a **Multi-Agent System** to separate concerns and ens
 1.  **Prerequisites:** Python 3.9+ installed.
 2.  **Clone & Install:**
     ```bash
-    cd web_app/backend
+    cd Storyteller_Google_capstone/backend
     pip install -r requirements.txt
     ```
 3.  **Environment:**
-    - Create a `.env` file in `web_app/backend/` with your API key:
+    - Create a `.env` file in `Storyteller_Google_capstone/backend/` with your API key:
       ```
       GOOGLE_API_KEY=your_api_key_here
       ```
@@ -79,7 +79,7 @@ The project is built using a **Multi-Agent System** to separate concerns and ens
     python main.py
     ```
 5.  **Run Frontend:**
-    - Open `web_app/frontend/index.html` in your browser.
+    - Open `Storyteller_Google_capstone/frontend/index.html` in your browser.
 
 ---
 
